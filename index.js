@@ -8,7 +8,10 @@ const port = 3000;
 app.use(express.json());
 
 //connect to db
-const mongoURI = "mongodb://mongo:27017/contactdb";
+
+const mongoURI =
+  "mongodb+srv://dinethsiriwardana28:Hf7GWAVLsIkbBJkj@cluster0.zxfsdhb.mongodb.net/";
+
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 //check if mongodb is connected
