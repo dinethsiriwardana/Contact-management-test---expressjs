@@ -9,8 +9,7 @@ app.use(express.json());
 
 //connect to db
 
-const mongoURI =
-  "mongodb+srv://dinethsiriwardana28:Hf7GWAVLsIkbBJkj@cluster0.zxfsdhb.mongodb.net/";
+const mongoURI = ".net/";
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
