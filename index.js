@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+const env = require("dotenv").config();
+
 //app setup
 const app = express();
 const port = 3000;
@@ -8,7 +10,8 @@ const port = 3000;
 app.use(express.json());
 
 //connect to db
-const mongoURI = "mongodb://mongo:27017/contactdb";
+const mongoURI = process.env.MONGO_URI;
+
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 //check if mongodb is connected
