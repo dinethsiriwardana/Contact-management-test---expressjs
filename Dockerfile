@@ -13,6 +13,8 @@ RUN npm install
 
 COPY . .
 
+ENV NODE_ENV production
+
 USER 10014
 EXPOSE 3000
 
